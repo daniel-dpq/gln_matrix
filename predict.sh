@@ -1,6 +1,4 @@
-# add '--use_precomputed_alignments [path_to_alignments]' to use precomputed msa
-# add '--chunk_size [N]' to use chunk to reduce peak memory
-
+#!/bin/bash
 
 python predict.py \
     --fasta_path example/4BJQ.pdb5.fasta \
