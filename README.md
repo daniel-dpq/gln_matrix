@@ -1,6 +1,6 @@
 # GLN Matrix Prediction
-This is the code for data preprocessing, model training and evaluation described 
-in the paper "Deep Learning-Assisted Discovery of Protein Entangling Motifs".
+This is the code for data preprocessing, prediction described in the paper 
+"Deep Learning-Assisted Discovery of Protein Entangling Motifs".
 
 # Installation
 
