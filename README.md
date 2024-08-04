@@ -21,6 +21,10 @@ conda activate gln_matrix
 You will need to download Uniclust30 database https://gwdu111.gwdg.de/~compbiol/uniclust/2023_02/ 
  (~ 86G) for MSA searching
 
+## Input file
+
+To predict the GLN matrix of a homodimer, you need to prepare a fasta file containing two identical 
+sequences with different sequence ids. Examples are given in the example/ directory.
 
 ## Inference
 
