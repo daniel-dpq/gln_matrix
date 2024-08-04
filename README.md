@@ -29,4 +29,4 @@ sequences with different sequence ids. Examples are given in the example/ direct
 ## Inference
 
 we provide a bash script and some sequence examples for model inference. Please 
-change the uniclust30_database_path before running predict.sh
+change the uniclust30_database_path before running ./predict.sh
