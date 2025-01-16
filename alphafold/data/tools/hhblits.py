@@ -20,7 +20,7 @@ import os
 import subprocess
 from typing import Any, Mapping, Optional, Sequence
 
-from fastfold.data.tools import utils
+from alphafold.data.tools import utils
 
 logging.basicConfig(level = logging.INFO,format = '%(asctime)s - %(levelname)s - %(message)s')
 

@@ -18,11 +18,33 @@ conda env create --name=gln_matrix -f environment.yml
 conda activate gln_matrix
 ```
 
-You will need to download Uniclust30 database https://gwdu111.gwdg.de/~compbiol/uniclust/2023_02/ 
+You will need to download [Uniclust30 database](https://gwdu111.gwdg.de/~compbiol/uniclust/2023_02/)
  (~ 86G) for MSA searching
 
+Alternatively, you can follow the instructions at [OpenFold Page](https://github.com/aqlaboratory/openfold) 
+to set up your environment.
+
+# Parameters
+
+Parameter files you may use for your own trial are deposited in `params/`. `params_model_1_multimer_v2.npz` 
+is the original AlphaFold2 parameters we used in our paper. `fine-tuned.pt` and `finalpoint.pt` are the final
+checkpoint and the checkpoint with the minimum validation loss during our finetuning. Data reported in 
+our paper was based on `fine-tuned.pt`
+
+# Data
+
+Data used for our training, validation and test are deposited in `data/`
+
+## Input file
+
+To predict the GLN matrix of a homodimer, you need to prepare a fasta file containing two identical 
+sequences with different sequence ids. Examples are given in the `example/` directory.
 
 ## Inference
 
-we provide a bash script and some sequence examples for model inference. Please 
-change the uniclust30_database_path before running predict.sh
+we provide a bash script `predict.sh` and some sequence examples in `example/` for model inference. Please 
+change the uniclust30_database_path before running `./predict.sh`
+
+## Output
+
+`predict.py` gives multi-sequence alignments, prediction timings and generated features for prediction in the output directory. The predicted GLN matrices were given in both `.txt` and `.png` formats.

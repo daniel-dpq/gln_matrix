@@ -90,7 +90,7 @@ def predict(
                 os.makedirs(alignment_dir)
 
             alignment_runner.run_msa_tools(
-                fasta_path=args.fasta_path,
+                fasta_path=fasta_path,
                 fasta_name=fasta_name,
                 alignment_dir=alignment_dir,
             )
@@ -117,7 +117,6 @@ def predict(
     # Set up model
     model = AlphaFold(config)
 
-    
     # Load weights
     if args.param_path is not None:
         print('Loading our model parameters...')

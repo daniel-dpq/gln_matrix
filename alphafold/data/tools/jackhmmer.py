@@ -23,8 +23,8 @@ import subprocess
 from typing import Any, Callable, Mapping, Optional, Sequence
 from urllib import request
 
-from fastfold.data import parsers
-from fastfold.data.tools import utils
+from alphafold.data import parsers
+from alphafold.data.tools import utils
 
 
 class Jackhmmer:
