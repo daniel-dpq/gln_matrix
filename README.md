@@ -24,14 +24,14 @@ You will need to download [Uniclust30 database](https://gwdu111.gwdg.de/~compbio
 Alternatively, you can follow the instructions at [OpenFold Page](https://github.com/aqlaboratory/openfold) 
 to set up your environment.
 
-# Parameters
+## Parameters
 
 Parameter files you may use for your own trial are deposited in `params/`. `params_model_1_multimer_v2.npz` 
 is the original AlphaFold2 parameters we used in our paper. `fine-tuned.pt` and `finalpoint.pt` are the final
 checkpoint and the checkpoint with the minimum validation loss during our finetuning. Data reported in 
 our paper was based on `fine-tuned.pt`
 
-# Data
+## Data
 
 Data used for our training, validation and test are deposited in `data/`
 
