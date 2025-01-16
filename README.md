@@ -29,7 +29,8 @@ to set up your environment.
 Parameter files you may use for your own trial are deposited in `params/`. `params_model_1_multimer_v2.npz` 
 is the original AlphaFold2 parameters we used in our paper. `fine-tuned.pt` and `finalpoint.pt` are the final
 checkpoint and the checkpoint with the minimum validation loss during our finetuning. Data reported in 
-our paper was based on `fine-tuned.pt`
+our paper was based on `fine-tuned.pt`. Pass `--param_path` in `predict.sh` to specify `.pt` parameter path and 
+pass `--alphafold_param_path` to sepcify the original AlphaFold2 parameter path.
 
 ## Data
 
