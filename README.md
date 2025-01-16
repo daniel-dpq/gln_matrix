@@ -48,4 +48,4 @@ change the uniclust30_database_path before running `./predict.sh`
 
 ## Output
 
-`predict.py` gives multi-sequence alignments, prediction timings and generated features for prediction in the output directory. The predicted GLN matrices were given in both `.txt` and `.png` formats.
+`predict.py` gives multi-sequence alignments, prediction timings and generated features for prediction in the output directory. The predicted GLN matrices were given in both `.txt` and `.png` formats. Example outputs are given in `out/`
