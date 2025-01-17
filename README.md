@@ -34,7 +34,8 @@ pass `--alphafold_param_path` to sepcify the original AlphaFold2 parameter path.
 
 ## Data
 
-Data used for our training, validation and test are deposited in `data/`
+Data used for our training, validation and test are deposited in `data/`. Recent PDB test set and the Monomer test
+set are also provided.
 
 ## Input file
 
